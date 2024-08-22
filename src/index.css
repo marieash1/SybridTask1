@@ -1,0 +1,44 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply font-sans text-gray-500 dark:text-gray-200 bg-gray-900;
+  }
+  a {
+    @apply font-medium text-blue-600 hover:text-blue-500;
+  }
+  body {
+    @apply bg-gray-200 flex items-center min-h-screen min-w-full;
+  }
+  h1 {
+    @apply text-4xl leading-tight;
+  }
+  button {
+    @apply rounded px-4 py-2 font-medium bg-gray-800 border-transparent hover:border-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-600;
+  }
+}
+
+@layer components {
+  /* Add component-specific styles here */
+}
+
+@layer utilities {
+  /* Add utility-specific styles here */
+}
+
+@layer variants {
+  .dark {
+    :root {
+      @apply text-gray-400 bg-white;
+    }
+    a:hover {
+      @apply text-blue-400;
+    }
+    button {
+      @apply bg-white;
+    }
+  }
+}
